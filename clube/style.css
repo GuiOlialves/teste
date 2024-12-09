@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    font-family: "Roboto", sans-serif
+}
+
+
+body{
+    background-color: rgb(31, 29, 29);
+    overflow-x: hidden; /*Bloqueia o scroll horizontal */
+    overflow-y: hidden;
+    
+}
+
+h1{
+    font-size: 100px;
+    color: blueviolet;
+
+}
+
+main{
+    width: 4000px;
+    display: flex;
+   /* justify-content: space-between;*/
+    align-items: center;
+    height: 600px;
+    flex-wrap: wrap;
+}
+
+.title{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.main{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    border-radius: 7px;
+    box-shadow: 5px 8px 10px rgb(99, 34, 160);
+    width: 250px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.placa{
+    position: relative;
+    top: 80px;
+}
+.placabaixo{
+    position: relative;
+    bottom: 30px;
+
+}
+
+
+#character {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 600px;
+   
+    background-image: url('Sprites/frente1.png'); /* Sprite inicial */
+    background-size: cover;
+}
+.popup {
+    display: none; /* Oculto por padrão */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+   /* top: -50px; /* Ajuste conforme necessário */
+  /*  left: 50%;*/
+    transform: translateX(-50%);
+    width: 150px;
+    text-align: center;
+    z-index: 11;
+}
+
